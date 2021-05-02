@@ -1,0 +1,366 @@
+body {
+  margin: 0px;
+}
+
+.t1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.resHeartContain {
+  position: relative;
+}
+
+.resHeartContain div {
+  position: absolute;
+}
+
+.resHeartContain .resHeartTop {
+  color: gray;
+  z-index: 1;
+}
+
+.resHeartContain .resHeartBottom {
+  color: white;
+  z-index: -1;
+}
+
+header .logoBanner {
+  background-color: white;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-filter: drop-shadow(0px 3px 5px #cfcfcf);
+          filter: drop-shadow(0px 3px 5px #cfcfcf);
+}
+
+header .logoBanner img {
+  width: 164;
+}
+
+header .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  background-color: #eaeaea;
+  color: #353535;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+header .location i {
+  margin-right: 18px;
+}
+
+header .explorerAdvert {
+  background-color: #f6f6f6;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .explorerAdvert .explorFlex {
+  height: 100%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+header .explorerAdvert .explorFlex .title {
+  margin-bottom: 50px;
+}
+
+header .explorerAdvert .explorFlex .explorerBlurb {
+  font-size: 20px;
+  font-weight: 300;
+  color: #4d4d4d;
+  margin-bottom: 34px;
+}
+
+header .explorerAdvert .explorFlex .exploreButton button {
+  width: 218px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-filter: drop-shadow(0px 0px 8px #d1d1d1);
+          filter: drop-shadow(0px 0px 8px #d1d1d1);
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 442px;
+}
+
+header nav .title {
+  width: 94%;
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
+header nav .navFlex {
+  width: 94%;
+  height: 272px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header nav .navFlex .menuBar {
+  background-color: #f6f6f6;
+  position: relative;
+  border-radius: 20px;
+  width: calc(100% - 13px);
+  height: 74px;
+  -webkit-filter: drop-shadow(0px 0px 8px #d1d1d1);
+          filter: drop-shadow(0px 0px 8px #d1d1d1);
+}
+
+header nav .navFlex .menuBar .menuBarText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header nav .navFlex .menuBar .menuBarText .mbt1 {
+  color: #7e7e7e;
+  width: 74;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+header nav .navFlex .menuBar .menuBarText .mbt2 {
+  text-align: left;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+header nav .navFlex .menuBar .menuBarNum {
+  width: 26px;
+  height: 26px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: -13px;
+  top: 24px;
+  position: absolute;
+}
+
+main {
+  background-color: #f6f6f6;
+  width: 100%;
+  min-height: 500px;
+  padding-top: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .title {
+  width: 94%;
+  margin-bottom: 24px;
+}
+
+main .restCardsFlex {
+  width: 94%;
+}
+
+main .restCardsFlex .resCard {
+  background-color: white;
+  -webkit-filter: drop-shadow(0px 0px 8px #d1d1d1);
+          filter: drop-shadow(0px 0px 8px #d1d1d1);
+  height: calc(50vw + 56px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  margin-bottom: 24px;
+}
+
+main .restCardsFlex .resCard .resHeartMove {
+  height: 24px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .restCardsFlex .resCard .resHeartMove .resHeartContain {
+  right: 26px;
+}
+
+main .restCardsFlex .resCard .resInfoContainer {
+  width: 94%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main .restCardsFlex .resCard .resInfoContainer .resInfo .resName {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+main .restCardsFlex .resCard .resInfoContainer .resInfo .resLocation {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 16;
+}
+
+main .restCardsFlex .resCard .resImg {
+  width: 94vw;
+  margin-bottom: 8px;
+}
+
+main .restCardsFlex .resCard .resImg img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 94vw;
+  height: 50vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footFlex {
+  width: 90%;
+  height: 70%;
+}
+
+footer .footFlex .f1 img {
+  width: 100px;
+  height: 18px;
+  fill: white;
+  margin-bottom: 27px;
+}
+
+footer .footFlex .feet {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-bottom: 3px;
+}
+
+footer .footFlex .f2 {
+  font-weight: 400;
+}
+
+footer .footFlex .f3 {
+  font-weight: 200;
+}
+/*# sourceMappingURL=style.css.map */
