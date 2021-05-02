@@ -239,12 +239,12 @@ main {
 }
 
 main .title {
-  width: 94%;
+  width: 94vw;
   margin-bottom: 24px;
 }
 
 main .restCardsFlex {
-  width: 94%;
+  width: 94vw;
 }
 
 main .restCardsFlex .resCard {
