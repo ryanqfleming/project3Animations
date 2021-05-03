@@ -1,0 +1,323 @@
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+}
+
+.t1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.t2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.resHeartContain {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+  position: relative;
+}
+
+.resHeartContain div {
+  position: absolute;
+}
+
+.resHeartContain .resHeartTop {
+  color: gray;
+  z-index: 1;
+  font-size: 24px;
+}
+
+.resHeartContain .resHeartBottom {
+  color: white;
+  z-index: -1;
+  font-size: 24px;
+}
+
+header {
+  background: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header nav .logoBanner {
+  background-color: white;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-filter: drop-shadow(0px 3px 5px #cfcfcf);
+          filter: drop-shadow(0px 3px 5px #cfcfcf);
+}
+
+header nav .logoBanner img {
+  width: 164;
+}
+
+header .banner img {
+  width: 100%;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+header .titleCard {
+  width: 100%;
+  height: 70px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  top: -34px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .titleFlex {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .resHeartMove {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header .title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header .subMenuGapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header .price {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+main {
+  background-color: #f6f6f6;
+  width: 100%;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .menuFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 94%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .menuFlex .underline {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-bottom: 14px;
+}
+
+main .menuFlex .menuSecFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .menuFlex .menuSecFlex .mTile {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+main .exploreButton button {
+  width: 218px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-filter: drop-shadow(0px 0px 8px #d1d1d1);
+          filter: drop-shadow(0px 0px 8px #d1d1d1);
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.subMenuFlex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  -webkit-filter: drop-shadow(0px 0px 8px #d1d1d1);
+          filter: drop-shadow(0px 0px 8px #d1d1d1);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.subMenuFlex .dishFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.subMenuFlex .dishFlex .dish {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.subMenuFlex .dishFlex .dishDisc {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.subMenuFlex .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footFlex {
+  width: 90%;
+  height: 70%;
+}
+
+footer .footFlex .f1 img {
+  width: 100px;
+  height: 18px;
+  fill: white;
+  margin-bottom: 27px;
+}
+
+footer .footFlex .feet {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-bottom: 3px;
+}
+
+footer .footFlex .f2 {
+  font-weight: 400;
+}
+
+footer .footFlex .f3 {
+  font-weight: 200;
+}
+
+.gapper {
+  height: 50px;
+}
+/*# sourceMappingURL=substyle.css.map */

@@ -6,7 +6,21 @@ $color-pink: #FF79DA;
 $color-teal: #99E2D0;
 $border-button: drop-shadow(0px 0px 8px #d1d1d1);
 
-
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
 
 body {
     margin: 0px;
@@ -32,6 +46,8 @@ body {
     }
 }
 header  {
+    display: flex;
+    flex-direction: column;
     .logoBanner {
         background-color: white;
         height: 64px;
@@ -256,4 +272,7 @@ footer {
             font-weight: 200;
         }
     }
+}
+.gapper {
+    height: 50px;
 }
