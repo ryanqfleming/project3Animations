@@ -5,6 +5,7 @@ $color-purple: #9356DC;
 $color-pink: #FF79DA;
 $color-teal: #99E2D0;
 $border-button: drop-shadow(0px 0px 8px #d1d1d1);
+$max-width: 1100px;
 
 a:link {
     text-decoration: none;
@@ -275,4 +276,31 @@ footer {
 }
 .gapper {
     height: 50px;
+}
+
+@media only screen and (min-width: $max-width) {
+    body {
+        width: $max-width;
+        margin: auto;
+    }
+    main {
+        .restCardsFlex {
+            width: $max-width;
+            .resCard {
+                width: $max-width;
+                height: 460px;
+                .resImg {
+                    width: $max-width;
+                    height: 400px;
+                    img {
+                        width: $max-width;
+                        height:400px;
+                    }
+                }
+            }
+        }
+        .title {
+            width: calc(#{$max-width} - 5%);
+        }
+    }
 }
