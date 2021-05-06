@@ -33,19 +33,19 @@ body {
 }
 .loader{
     background-color:white;
-    top:0px;
+    bottom:0px;
     left: 0px;
     width: 100vw;
     height: 100vh;
     z-index:90;
-    position: absolute;
-    animation: fadeIn 3s, pointer 6s;
+    position: fixed;
+    animation: fadeIn 3s;
     animation-iteration-count: 1;
     opacity: 0;
     pointer-events: none;
 }
 .loaderIconWrap {
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100vw;
@@ -54,6 +54,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 91;
+    pointer-events: none;
     .loaderIcon {
         animation: fadeIn 3.2s;
         animation-iteration-count: 1;
@@ -61,7 +62,7 @@ body {
         span {
             font-size: 3em;
             font-family: $font-titleStack;
-            animation: wobble 1.5s ease-in-out 10;
+            animation: wobble 1.5s ease-in-out 3;
         }
         span:nth-child(2) {animation-delay: 100ms;}
         span:nth-child(3) {animation-delay: 200ms;}
@@ -103,11 +104,31 @@ body {
     .resHeartTop{
         color: gray;
         z-index: 1;
+        font-size:2em;
     }
     .resHeartBottom{
         color: white;
         z-index: -1;
+        font-size: 2em;
     }
+}
+.resHeartBottom{
+    z-index: 93;
+    background-image: linear-gradient(0deg, rgba(147,86,220,1) 50%, rgba(255,255,255,1) 50%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.resHeartTop:hover ~ .resHeartBottom {
+    animation: heartAni 2s ease 1;
+    background-position:50% 100%;
+}
+
+@keyframes heartAni {
+    0%{background-position:0% 0%}
+    100%{background-position:50% 100%}
 }
 header  {
     display: flex;
