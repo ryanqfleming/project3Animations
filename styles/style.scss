@@ -25,6 +25,69 @@ a:link {
 
 body {
     margin: 0px;
+    animation: display 7s;
+    animation-iteration-count: 1;
+}
+.wrapItUp {
+    z-index: -2;
+}
+.loader{
+    background-color:white;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index:90;
+    position: absolute;
+    animation: fadeIn 3s, pointer 6s;
+    animation-iteration-count: 1;
+    opacity: 0;
+    pointer-events: none;
+}
+.loaderIconWrap {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 91;
+    .loaderIcon {
+        animation: fadeIn 3.2s;
+        animation-iteration-count: 1;
+        opacity: 0;
+        span {
+            font-size: 3em;
+            font-family: $font-titleStack;
+            animation: wobble 1.5s ease-in-out 10;
+        }
+        span:nth-child(2) {animation-delay: 100ms;}
+        span:nth-child(3) {animation-delay: 200ms;}
+        span:nth-child(4) {animation-delay: 300ms;}
+        span:nth-child(5) {animation-delay: 400ms;}
+        span:nth-child(6) {animation-delay: 500ms;}
+        span:nth-child(7) {animation-delay: 600ms;}
+    }
+}
+@keyframes display {
+    from{overflow: hidden}
+    to{display: visible}
+}
+@keyframes fadeIn {
+    0% {opacity: 1}
+    60% {opacity: 1}
+    100% {opacity: 0}
+}
+@keyframes pointer {
+    from{pointer-events: auto;}
+    to{pointer-events: none;}
+}
+@keyframes wobble {
+    0%, 100%   {font-size: 3em}
+    25%  {font-size: 2em}
+    75%  {font-size: 3.5em}
 }
 .t1 {
     font-family: $font-subStack;

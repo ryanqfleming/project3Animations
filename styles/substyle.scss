@@ -12,20 +12,34 @@ $max-width: 1100px;
 
 a:link {
     text-decoration: none;
-  }
+    color: black;
+}
   
   a:visited {
     text-decoration: none;
+    color: black;
   }
   
   a:hover {
     text-decoration: none;
+    color: black;
   }
   
   a:active {
     text-decoration: none;
+    color: black;
   }
 
+  .backArrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    font-size: 2em;
+    i {
+        color: black;
+    }
+  }
 body {
     margin: 0px;
 }
@@ -40,8 +54,10 @@ body {
     font-size: 28px;
 }
 .resHeartContain {
-    transform: translateY($heart-move);
-    position:relative;
+    right: 40px;
+    top: 38px;
+    position:absolute;
+    
 
     div {
         position:absolute;
@@ -103,6 +119,7 @@ header  {
     }
     .resHeartMove {
         flex-grow: 1;
+        text-align: right;
     }
     .title {
         flex-grow: 1;
