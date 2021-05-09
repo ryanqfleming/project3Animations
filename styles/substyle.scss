@@ -4,7 +4,8 @@ $font-subStack: 'Roboto', sans-serif;
 $color-purple: #9356DC;
 $color-pink: #FF79DA;
 $color-teal: #99E2D0;
-$border-button: drop-shadow(0px 0px 8px #d1d1d1);
+$border-button: drop-shadow(0px 10px 8px #b8b8b8);
+$border-button-before: drop-shadow(0px 0px 4px #b8b8b8);
 $heart-size: 24px;
 $heart-move: -16px;
 $max-width: 1100px;
@@ -73,6 +74,43 @@ body {
         font-size:$heart-size;
     }
 }
+.resHeartBottom{
+    z-index: 93;
+    background-image: linear-gradient(0deg, rgba(147,86,220,1) 50%, rgba(255,255,255,1) 50%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.resHeartTop:hover ~ .resHeartBottom {
+    animation: heartAni 2s ease 1;
+    background-position:50% 100%;
+}
+
+@keyframes heartAni {
+    0%{background-position:0% 0%}
+    100%{background-position:50% 100%}
+}
+@keyframes slightFade {
+    0% {opacity: 0.9}
+    100% {opacity: 0.5}
+}
+@keyframes tileFadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+        filter: $border-button-before;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+        filter: $border-button;
+    }
+}
 header  {
     background: $light-gray;
     display: flex;
@@ -127,9 +165,6 @@ header  {
     .subMenuGapper {
         flex-grow: 1;
     }
-    .price {
-        flex-grow: 0;
-    }
 } 
 main {
    background-color: $light-gray;
@@ -152,6 +187,7 @@ main {
        .menuSecFlex {
            display: flex;
            flex-direction: column;
+
            .mTile {
                width: 100%;
                font-size: 16px;
@@ -173,11 +209,28 @@ main {
         filter: $border-button;
         margin-top: 50px;
         margin-bottom: 70px;
+        &:hover {
+            opacity: 0.8;
+        }
     }
 
 }
 }
+.menuSecFlex div:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.menuSecFlex div:nth-child(5) {  
+    animation-delay: 0.6s;
+}
+.menuSecFlex div:nth-child(6) {  
+    animation-delay: 0.9s;
+}
+.menuSecFlex div:nth-child(6) {  
+    animation-delay: 1.2s;
+}
+
 .subMenuFlex {
+    opacity: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -185,11 +238,15 @@ main {
     filter: $border-button;
     border-radius: 15px;
     margin-bottom: 20px;
+    animation: tileFadeIn 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     .dishFlex {
         display: flex;
         flex-direction: column;
         margin-left: 8px;
         margin-top: 8px;
+        flex-grow: 1;
         .dish {
             font-family: $font-subStack;
             font-size: 20px;
@@ -201,6 +258,11 @@ main {
             font-size:18px;
             font-weight: 400;
             margin-bottom: 10px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden; 
+            width: calc(100vw - 180px);
+            background-color: red;
         }
     }
     .price {
@@ -212,9 +274,9 @@ main {
         font-family: $font-subStack;
         font-weight: 600;
         font-size: 16px;
+        background-color: green;
     }
-    .aniGapper {
-
+    .subMenuGapper {
     }
 }
 footer {
@@ -256,5 +318,12 @@ footer {
     body {
         width: $max-width;
         margin: auto;
+    }
+    .subMenuFlex{
+        .dishFlex {
+            .dishDisc {
+                width: calc(#{$max-width} - 180px);
+            }
+        }
     }
 }

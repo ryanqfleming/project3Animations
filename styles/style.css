@@ -1,17 +1,21 @@
 a:link {
   text-decoration: none;
+  color: black;
 }
 
 a:visited {
   text-decoration: none;
+  color: black;
 }
 
 a:hover {
   text-decoration: none;
+  color: black;
 }
 
 a:active {
   text-decoration: none;
+  color: black;
 }
 
 body {
@@ -251,6 +255,68 @@ body {
   }
 }
 
+@-webkit-keyframes slightFade {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes slightFade {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes borderGrow {
+  from {
+    -webkit-filter: drop-shadow(0px 0px 8px #d1d1d1);
+            filter: drop-shadow(0px 0px 8px #d1d1d1);
+  }
+  to {
+    -webkit-filter: drop-shadow(0px 0px 40px #ff15e0);
+            filter: drop-shadow(0px 0px 40px #ff15e0);
+  }
+}
+
+@keyframes borderGrow {
+  from {
+    -webkit-filter: drop-shadow(0px 0px 8px #d1d1d1);
+            filter: drop-shadow(0px 0px 8px #d1d1d1);
+  }
+  to {
+    -webkit-filter: drop-shadow(0px 0px 40px #ff15e0);
+            filter: drop-shadow(0px 0px 40px #ff15e0);
+  }
+}
+
+@-webkit-keyframes borderGrowLight {
+  from {
+    -webkit-filter: drop-shadow(0px 0px 8px #d1d1d1);
+            filter: drop-shadow(0px 0px 8px #d1d1d1);
+  }
+  to {
+    -webkit-filter: drop-shadow(0px 0px 20px #90007d);
+            filter: drop-shadow(0px 0px 20px #90007d);
+  }
+}
+
+@keyframes borderGrowLight {
+  from {
+    -webkit-filter: drop-shadow(0px 0px 8px #d1d1d1);
+            filter: drop-shadow(0px 0px 8px #d1d1d1);
+  }
+  to {
+    -webkit-filter: drop-shadow(0px 0px 20px #90007d);
+            filter: drop-shadow(0px 0px 20px #90007d);
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,6 +429,16 @@ header .explorerAdvert .explorFlex .exploreButton button {
           filter: drop-shadow(0px 0px 8px #d1d1d1);
 }
 
+header .explorerAdvert .explorFlex .exploreButton button:hover {
+  -webkit-animation: slightFade 1s, borderGrow 1s;
+          animation: slightFade 1s, borderGrow 1s;
+  -webkit-filter: drop-shadow(0px 0px 40px #ff15e0);
+          filter: drop-shadow(0px 0px 40px #ff15e0);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  opacity: 0.5;
+}
+
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,6 +485,16 @@ header nav .navFlex .menuBar {
   height: 74px;
   -webkit-filter: drop-shadow(0px 0px 8px #d1d1d1);
           filter: drop-shadow(0px 0px 8px #d1d1d1);
+}
+
+header nav .navFlex .menuBar:hover {
+  -webkit-animation: slightFade 2s, borderGrow 2s;
+          animation: slightFade 2s, borderGrow 2s;
+  -webkit-filter: drop-shadow(0px 0px 40px #ff15e0);
+          filter: drop-shadow(0px 0px 40px #ff15e0);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  opacity: 0.3;
 }
 
 header nav .navFlex .menuBar .menuBarText {
@@ -499,6 +585,16 @@ main .restCardsFlex .resCard {
           align-items: center;
   border-radius: 15px;
   margin-bottom: 24px;
+}
+
+main .restCardsFlex .resCard:hover {
+  -webkit-animation: slightFade 1s, borderGrowLight 1s;
+          animation: slightFade 1s, borderGrowLight 1s;
+  -webkit-filter: drop-shadow(0px 0px 20px #90007d);
+          filter: drop-shadow(0px 0px 20px #90007d);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  opacity: 0.5;
 }
 
 main .restCardsFlex .resCard .resHeartMove {

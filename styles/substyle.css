@@ -68,6 +68,99 @@ body {
   font-size: 24px;
 }
 
+.resHeartBottom {
+  z-index: 93;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #9356dc), color-stop(50%, white));
+  background-image: linear-gradient(0deg, #9356dc 50%, white 50%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.resHeartTop:hover ~ .resHeartBottom {
+  -webkit-animation: heartAni 2s ease 1;
+          animation: heartAni 2s ease 1;
+  background-position: 50% 100%;
+}
+
+@-webkit-keyframes heartAni {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+@keyframes heartAni {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+@-webkit-keyframes slightFade {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes slightFade {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes tileFadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    -webkit-filter: drop-shadow(0px 0px 4px #b8b8b8);
+            filter: drop-shadow(0px 0px 4px #b8b8b8);
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-filter: drop-shadow(0px 10px 8px #b8b8b8);
+            filter: drop-shadow(0px 10px 8px #b8b8b8);
+  }
+}
+
+@keyframes tileFadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    -webkit-filter: drop-shadow(0px 0px 4px #b8b8b8);
+            filter: drop-shadow(0px 0px 4px #b8b8b8);
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-filter: drop-shadow(0px 10px 8px #b8b8b8);
+            filter: drop-shadow(0px 10px 8px #b8b8b8);
+  }
+}
+
 header {
   background: #f6f6f6;
   display: -webkit-box;
@@ -159,12 +252,6 @@ header .subMenuGapper {
           flex-grow: 1;
 }
 
-header .price {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-}
-
 main {
   background-color: #f6f6f6;
   width: 100%;
@@ -229,13 +316,38 @@ main .exploreButton button {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  -webkit-filter: drop-shadow(0px 0px 8px #d1d1d1);
-          filter: drop-shadow(0px 0px 8px #d1d1d1);
+  -webkit-filter: drop-shadow(0px 10px 8px #b8b8b8);
+          filter: drop-shadow(0px 10px 8px #b8b8b8);
   margin-top: 50px;
   margin-bottom: 70px;
 }
 
+main .exploreButton button:hover {
+  opacity: 0.8;
+}
+
+.menuSecFlex div:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.menuSecFlex div:nth-child(5) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.menuSecFlex div:nth-child(6) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.menuSecFlex div:nth-child(6) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
 .subMenuFlex {
+  opacity: 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,10 +356,16 @@ main .exploreButton button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: white;
-  -webkit-filter: drop-shadow(0px 0px 8px #d1d1d1);
-          filter: drop-shadow(0px 0px 8px #d1d1d1);
+  -webkit-filter: drop-shadow(0px 10px 8px #b8b8b8);
+          filter: drop-shadow(0px 10px 8px #b8b8b8);
   border-radius: 15px;
   margin-bottom: 20px;
+  -webkit-animation: tileFadeIn 2s;
+          animation: tileFadeIn 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .subMenuFlex .dishFlex {
@@ -260,6 +378,9 @@ main .exploreButton button {
           flex-direction: column;
   margin-left: 8px;
   margin-top: 8px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .subMenuFlex .dishFlex .dish {
@@ -274,6 +395,11 @@ main .exploreButton button {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: calc(100vw - 180px);
+  background-color: red;
 }
 
 .subMenuFlex .price {
@@ -291,6 +417,7 @@ main .exploreButton button {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  background-color: green;
 }
 
 footer {
@@ -342,6 +469,9 @@ footer .footFlex .f3 {
   body {
     width: 1100px;
     margin: auto;
+  }
+  .subMenuFlex .dishFlex .dishDisc {
+    width: calc(1100px - 180px);
   }
 }
 /*# sourceMappingURL=substyle.css.map */
