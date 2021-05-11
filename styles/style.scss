@@ -31,7 +31,6 @@ a:link {
 
 body {
     margin: 0px;
-    animation: display 7s;
     animation-iteration-count: 1;
 }
 .wrapItUp {
@@ -77,10 +76,6 @@ body {
         span:nth-child(6) {animation-delay: 500ms;}
         span:nth-child(7) {animation-delay: 600ms;}
     }
-}
-@keyframes display {
-    from{overflow: hidden}
-    to{display: visible}
 }
 @keyframes fadeIn {
     0% {opacity: 1}
@@ -159,7 +154,7 @@ header  {
         align-items: center;
         filter: drop-shadow(0px 3px 5px #cfcfcf);
         img {
-            width: 164;
+            width: 164px;
         }
     }
     .location {
@@ -261,7 +256,7 @@ header  {
 
                     .mbt1 {
                         color: #7e7e7e;
-                        width: 74;
+                        width: 74px;
                         text-align: center;
                         font-size: 18px;
                         font-family: $font-subStack;
@@ -344,7 +339,7 @@ main {
                     .resLocation {
                         font-family: $font-subStack;
                         font-weight: 200;
-                        font-size: 16;
+                        font-size: 16px;
                     }
 
                 }

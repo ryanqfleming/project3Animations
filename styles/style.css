@@ -20,8 +20,6 @@ a:active {
 
 body {
   margin: 0px;
-  -webkit-animation: display 7s;
-          animation: display 7s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
@@ -108,24 +106,6 @@ body {
 .loaderIconWrap .loaderIcon span:nth-child(7) {
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
-}
-
-@-webkit-keyframes display {
-  from {
-    overflow: hidden;
-  }
-  to {
-    display: visible;
-  }
-}
-
-@keyframes display {
-  from {
-    overflow: hidden;
-  }
-  to {
-    display: visible;
-  }
 }
 
 @-webkit-keyframes fadeIn {
@@ -344,7 +324,7 @@ header .logoBanner {
 }
 
 header .logoBanner img {
-  width: 164;
+  width: 164px;
 }
 
 header .location {
@@ -509,7 +489,7 @@ header nav .navFlex .menuBar .menuBarText {
 
 header nav .navFlex .menuBar .menuBarText .mbt1 {
   color: #7e7e7e;
-  width: 74;
+  width: 74px;
   text-align: center;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
@@ -637,7 +617,7 @@ main .restCardsFlex .resCard .resInfoContainer .resInfo .resName {
 main .restCardsFlex .resCard .resInfoContainer .resInfo .resLocation {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
-  font-size: 16;
+  font-size: 16px;
 }
 
 main .restCardsFlex .resCard .resImg {
