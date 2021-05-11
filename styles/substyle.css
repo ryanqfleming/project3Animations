@@ -430,8 +430,8 @@ main .exploreButton button:hover {
 .subMenuFlex .checkMark i {
   color: white;
   margin-top: 18px;
-  -webkit-transform: translateX(100px) rotate(180deg);
-          transform: translateX(100px) rotate(180deg);
+  -webkit-transform: translateX(0px) rotate(180deg);
+          transform: translateX(0px) rotate(180deg);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -524,6 +524,19 @@ footer .footFlex .f3 {
   }
   .subMenuFlex .dishFlex .dishDisc {
     width: calc(1100px - 180px);
+  }
+  .subMenuFlex:hover {
+    background-position: -80px, 100%;
+  }
+  .subMenuFlex:hover .dishFlex .dishDisc {
+    width: calc(1100px - 200px);
+  }
+  .subMenuFlex:hover .checkMark {
+    width: 80px;
+  }
+  .subMenuFlex:hover .checkMark i {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 /*# sourceMappingURL=substyle.css.map */

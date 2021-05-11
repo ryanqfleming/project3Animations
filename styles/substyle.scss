@@ -286,7 +286,7 @@ main {
         i {
             color: white;
             margin-top:18px;
-            transform: translateX(100px) rotate(180deg);
+            transform: translateX(0px) rotate(180deg);
             transition: all 0.5s ease;
         }
     }
@@ -369,6 +369,21 @@ footer {
         .dishFlex {
             .dishDisc {
                 width: calc(#{$max-width} - 180px);
+            }
+        }
+    }
+    .subMenuFlex:hover {
+        background-position: -80px, 100%;
+        //.price {
+        //    transform: translateX(-75px);
+        //}
+       .dishFlex .dishDisc {
+            width: calc(#{$max-width} - 200px);
+        }
+        .checkMark {
+            width: 80px;
+            i {
+                transform: translateX(0px)
             }
         }
     }
