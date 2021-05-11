@@ -80,8 +80,8 @@ body {
 }
 
 .resHeartTop:hover ~ .resHeartBottom {
-  -webkit-animation: heartAni 2s ease 1;
-          animation: heartAni 2s ease 1;
+  -webkit-animation: heartAni 420ms ease 1;
+          animation: heartAni 420ms ease 1;
   background-position: 50% 100%;
 }
 
@@ -360,8 +360,8 @@ main .exploreButton button:hover {
           filter: drop-shadow(0px 10px 8px #b8b8b8);
   border-radius: 15px;
   margin-bottom: 20px;
-  -webkit-animation: tileFadeIn 2s;
-          animation: tileFadeIn 2s;
+  -webkit-animation: tileFadeIn 1s;
+          animation: tileFadeIn 1s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
@@ -398,8 +398,6 @@ main .exploreButton button:hover {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  width: calc(100vw - 180px);
-  background-color: red;
 }
 
 .subMenuFlex .price {
@@ -417,7 +415,61 @@ main .exploreButton button:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 16px;
-  background-color: green;
+}
+
+.subMenuFlex .checkMark {
+  height: 66px;
+  overflow: hidden;
+  text-align: center;
+  width: 0px;
+  font-size: 34px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.subMenuFlex .checkMark i {
+  color: white;
+  margin-top: 18px;
+  -webkit-transform: translateX(100px) rotate(180deg);
+          transform: translateX(100px) rotate(180deg);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.subMenuFlex .dishFlex .dishDisc {
+  width: 80vw;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.subMenuFlex {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #99E2D0), color-stop(50%, white));
+  background: linear-gradient(270deg, #99E2D0 50%, white 50%);
+  background-size: 200%, 200%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.subMenuFlex .price {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.subMenuFlex:hover {
+  background-position: -80px, 100%;
+}
+
+.subMenuFlex:hover .dishFlex .dishDisc {
+  width: calc(80vw - 75px);
+}
+
+.subMenuFlex:hover .checkMark {
+  width: 80px;
+}
+
+.subMenuFlex:hover .checkMark i {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
 footer {

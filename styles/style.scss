@@ -5,8 +5,8 @@ $color-purple: #9356DC;
 $color-pink: #FF79DA;
 $color-teal: #99E2D0;
 $border-button: drop-shadow(0px 0px 8px #d1d1d1);
-$border-button-through: drop-shadow(0px 0px 40px #ff15e0);
-$border-button-through-light: drop-shadow(0px 0px 20px #90007d);
+$border-button-through: drop-shadow(0px 0px 10px #ff15e0);
+$border-button-through-light: drop-shadow(0px 0px 10px #90007d);
 $max-width: 1100px;
 
 a:link {
@@ -62,7 +62,7 @@ body {
     z-index: 91;
     pointer-events: none;
     .loaderIcon {
-        animation: fadeIn 3.2s;
+        animation: fadeIn 3s;
         animation-iteration-count: 1;
         opacity: 0;
         span {
@@ -84,7 +84,7 @@ body {
 }
 @keyframes fadeIn {
     0% {opacity: 1}
-    60% {opacity: 1}
+    85% {opacity: 1}
     100% {opacity: 0}
 }
 @keyframes pointer {
@@ -128,7 +128,7 @@ body {
     -moz-text-fill-color: transparent;
 }
 .resHeartTop:hover ~ .resHeartBottom {
-    animation: heartAni 2s ease 1;
+    animation: heartAni 420ms ease 1;
     background-position:50% 100%;
 }
 
@@ -137,8 +137,8 @@ body {
     100%{background-position:50% 100%}
 }
 @keyframes slightFade {
-    0% {opacity: 0.9}
-    100% {opacity: 0.5}
+    0% {opacity: 1}
+    100% {opacity: 0.8}
 }
 @keyframes borderGrow {
     from{filter: $border-button}
@@ -213,10 +213,10 @@ header  {
                     font-size: 16px;
                     filter: $border-button;
                     &:hover {
-                        animation: slightFade 1s, borderGrow 1s;
+                        animation: slightFade 400ms, borderGrow 400ms;
                         filter: $border-button-through;
                         animation-iteration-count: 1;
-                        opacity: 0.5;
+                        opacity: 0.8;
                     }
                 }
 
@@ -252,7 +252,7 @@ header  {
                     animation: slightFade 2s, borderGrow 2s;
                     filter: $border-button-through;
                     animation-iteration-count: 1;
-                    opacity: 0.3;
+                    opacity: 0.8;
                 }
                 .menuBarText {
                     display: flex;
@@ -315,10 +315,10 @@ main {
             border-radius: 15px;
             margin-bottom: 24px;
             &:hover {
-                animation: slightFade 1s, borderGrowLight 1s;
+                animation: slightFade 400ms, borderGrowLight 400ms;
                 filter: $border-button-through-light;
                 animation-iteration-count: 1;
-                opacity: 0.5;
+                opacity: 0.8;
             }
             .resHeartMove {
                 height: 24px;

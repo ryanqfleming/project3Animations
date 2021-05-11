@@ -66,8 +66,8 @@ body {
 }
 
 .loaderIconWrap .loaderIcon {
-  -webkit-animation: fadeIn 3.2s;
-          animation: fadeIn 3.2s;
+  -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   opacity: 0;
@@ -132,7 +132,7 @@ body {
   0% {
     opacity: 1;
   }
-  60% {
+  85% {
     opacity: 1;
   }
   100% {
@@ -144,7 +144,7 @@ body {
   0% {
     opacity: 1;
   }
-  60% {
+  85% {
     opacity: 1;
   }
   100% {
@@ -232,8 +232,8 @@ body {
 }
 
 .resHeartTop:hover ~ .resHeartBottom {
-  -webkit-animation: heartAni 2s ease 1;
-          animation: heartAni 2s ease 1;
+  -webkit-animation: heartAni 420ms ease 1;
+          animation: heartAni 420ms ease 1;
   background-position: 50% 100%;
 }
 
@@ -257,19 +257,19 @@ body {
 
 @-webkit-keyframes slightFade {
   0% {
-    opacity: 0.9;
+    opacity: 1;
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.8;
   }
 }
 
 @keyframes slightFade {
   0% {
-    opacity: 0.9;
+    opacity: 1;
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.8;
   }
 }
 
@@ -279,8 +279,8 @@ body {
             filter: drop-shadow(0px 0px 8px #d1d1d1);
   }
   to {
-    -webkit-filter: drop-shadow(0px 0px 40px #ff15e0);
-            filter: drop-shadow(0px 0px 40px #ff15e0);
+    -webkit-filter: drop-shadow(0px 0px 10px #ff15e0);
+            filter: drop-shadow(0px 0px 10px #ff15e0);
   }
 }
 
@@ -290,8 +290,8 @@ body {
             filter: drop-shadow(0px 0px 8px #d1d1d1);
   }
   to {
-    -webkit-filter: drop-shadow(0px 0px 40px #ff15e0);
-            filter: drop-shadow(0px 0px 40px #ff15e0);
+    -webkit-filter: drop-shadow(0px 0px 10px #ff15e0);
+            filter: drop-shadow(0px 0px 10px #ff15e0);
   }
 }
 
@@ -301,8 +301,8 @@ body {
             filter: drop-shadow(0px 0px 8px #d1d1d1);
   }
   to {
-    -webkit-filter: drop-shadow(0px 0px 20px #90007d);
-            filter: drop-shadow(0px 0px 20px #90007d);
+    -webkit-filter: drop-shadow(0px 0px 10px #90007d);
+            filter: drop-shadow(0px 0px 10px #90007d);
   }
 }
 
@@ -312,8 +312,8 @@ body {
             filter: drop-shadow(0px 0px 8px #d1d1d1);
   }
   to {
-    -webkit-filter: drop-shadow(0px 0px 20px #90007d);
-            filter: drop-shadow(0px 0px 20px #90007d);
+    -webkit-filter: drop-shadow(0px 0px 10px #90007d);
+            filter: drop-shadow(0px 0px 10px #90007d);
   }
 }
 
@@ -430,13 +430,13 @@ header .explorerAdvert .explorFlex .exploreButton button {
 }
 
 header .explorerAdvert .explorFlex .exploreButton button:hover {
-  -webkit-animation: slightFade 1s, borderGrow 1s;
-          animation: slightFade 1s, borderGrow 1s;
-  -webkit-filter: drop-shadow(0px 0px 40px #ff15e0);
-          filter: drop-shadow(0px 0px 40px #ff15e0);
+  -webkit-animation: slightFade 400ms, borderGrow 400ms;
+          animation: slightFade 400ms, borderGrow 400ms;
+  -webkit-filter: drop-shadow(0px 0px 10px #ff15e0);
+          filter: drop-shadow(0px 0px 10px #ff15e0);
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 header nav {
@@ -490,11 +490,11 @@ header nav .navFlex .menuBar {
 header nav .navFlex .menuBar:hover {
   -webkit-animation: slightFade 2s, borderGrow 2s;
           animation: slightFade 2s, borderGrow 2s;
-  -webkit-filter: drop-shadow(0px 0px 40px #ff15e0);
-          filter: drop-shadow(0px 0px 40px #ff15e0);
+  -webkit-filter: drop-shadow(0px 0px 10px #ff15e0);
+          filter: drop-shadow(0px 0px 10px #ff15e0);
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 header nav .navFlex .menuBar .menuBarText {
@@ -588,13 +588,13 @@ main .restCardsFlex .resCard {
 }
 
 main .restCardsFlex .resCard:hover {
-  -webkit-animation: slightFade 1s, borderGrowLight 1s;
-          animation: slightFade 1s, borderGrowLight 1s;
-  -webkit-filter: drop-shadow(0px 0px 20px #90007d);
-          filter: drop-shadow(0px 0px 20px #90007d);
+  -webkit-animation: slightFade 400ms, borderGrowLight 400ms;
+          animation: slightFade 400ms, borderGrowLight 400ms;
+  -webkit-filter: drop-shadow(0px 0px 10px #90007d);
+          filter: drop-shadow(0px 0px 10px #90007d);
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 main .restCardsFlex .resCard .resHeartMove {

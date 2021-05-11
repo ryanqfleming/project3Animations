@@ -84,7 +84,7 @@ body {
     -moz-text-fill-color: transparent;
 }
 .resHeartTop:hover ~ .resHeartBottom {
-    animation: heartAni 2s ease 1;
+    animation: heartAni 420ms ease 1;
     background-position:50% 100%;
 }
 
@@ -238,7 +238,7 @@ main {
     filter: $border-button;
     border-radius: 15px;
     margin-bottom: 20px;
-    animation: tileFadeIn 2s;
+    animation: tileFadeIn 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     .dishFlex {
@@ -261,8 +261,7 @@ main {
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden; 
-            width: calc(100vw - 180px);
-            background-color: red;
+
         }
     }
     .price {
@@ -274,11 +273,58 @@ main {
         font-family: $font-subStack;
         font-weight: 600;
         font-size: 16px;
-        background-color: green;
+
     }
-    .subMenuGapper {
+    .checkMark {
+
+        height: 66px;
+        overflow: hidden;
+        text-align: center;
+        width: 0px;
+        font-size: 34px;
+        transition: all 0.5s ease;
+        i {
+            color: white;
+            margin-top:18px;
+            transform: translateX(100px) rotate(180deg);
+            transition: all 0.5s ease;
+        }
     }
 }
+
+.subMenuFlex .dishFlex {
+
+    .dishDisc {
+        width: 80vw;
+        transition: all 0.5s ease;
+    }
+}
+.subMenuFlex {
+    background: linear-gradient(270deg, $color-teal 50%, white 50%);
+    background-size: 200%, 200%;
+    transition: all 0.5s ease;
+    .price {
+        transition: all 0.5s ease;
+    }
+}
+.subMenuFlex:hover {
+    background-position: -80px, 100%;
+    //.price {
+    //    transform: translateX(-75px);
+    //}
+   .dishFlex .dishDisc {
+        width: calc(80vw - 75px);
+    }
+    .checkMark {
+        width: 80px;
+        i {
+            transform: translateX(0px)
+        }
+    }
+}
+
+
+
 footer {
     background-color: #353535;
     width: 100%;
